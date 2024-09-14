@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 import pic2 from "../Components/assets/pic2.png";
 import { MdWavingHand } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import Timeline from "./Timeline/Timeline";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
+import Timeline from "./Timeline/Timeline";
 
 const About = () => {
   const scrollRef = useRef(null);
@@ -42,7 +42,7 @@ const About = () => {
     <div>
       <div
         id="about"
-        className=" w-[100vw] h-[180vh] p-10  bg-[#F7F7F7]   flex justify-center items-center"
+        className=" w-[100vw] h-full p-10  bg-[#F7F7F7]   flex justify-center items-center"
       >
         <div
           // data-scroll-container
@@ -104,9 +104,10 @@ const About = () => {
                 </a>
               </div>
             </div>
-
-            <Timeline />
           </div>
+      <div className="flex w-full justify-center">
+        <Timeline />
+      </div>
         </div>
       </div>
     </div>
