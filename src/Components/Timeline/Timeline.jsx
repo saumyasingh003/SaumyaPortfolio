@@ -89,7 +89,7 @@ const Timeline = () => {
             </div>
           </div>
           <div className="hidden group-hover:block absolute mt-3 sm:pe-8">
-          <div className="hidden sm:flex w-[30vw] bg-gray-200 h-1 dark:bg-gray-700"></div>
+        
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Flowbite Library v1.3.0
             </h3>
