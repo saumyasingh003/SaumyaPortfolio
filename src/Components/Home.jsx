@@ -1,12 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import pic3 from "../Components/assets/pic3.png";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Navbar from "./Navbar/Navbar";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-// import ParticlesBackground from "./ParticlesBackground";
+import ParticlesComponent from './ParticlesBackground'
+
 import About from "./About";
+
 
 const Home = () => {
   const scrollRef = useRef(null);
@@ -62,9 +64,13 @@ const Home = () => {
         className="z-30"
       >
         <Navbar />
-
+  
         {/* home */}
-        <div className="relative flex w-full h-[100vh]  justify-center items-center overflow-hidden">
+        <div className="relative flex w-full h-[100vh]  justify-center items-center overflow-x-hidden">
+          <div className="h-screen">
+
+        <ParticlesComponent id="particles"/>
+          </div>
           <div className="absolute inset-x-0 bottom-0 ">
             <div className="w-full h-24 rounded-t-full"></div>
           </div>
@@ -131,16 +137,13 @@ const Home = () => {
           </div>
         </div>
 
-       
         <About />
 
-
-     
 
         {/* skills */}
         <div
           id="skills"
-          className="relative w-[100vw] h-[100vh] bg-[#F7F7F7] flex justify-center items-center"
+          className="relative w-[100vw] h-[100vh] bg-[#F7F7F7] flex justify-center items-center mt-10"
         >
           <div
             data-scroll-container
