@@ -5,9 +5,13 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Navbar from "./Navbar/Navbar";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import ParticlesComponent from './ParticlesBackground'
-
+// import ParticlesComponent from './ParticlesBackground'
+import Experience from "./Experience";
 import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
+// import { ImPieChart } from "react-icons/im";
+// import { Exception } from "sass-embedded";
 
 
 const Home = () => {
@@ -69,7 +73,7 @@ const Home = () => {
         <div className="relative flex w-full h-[100vh]  justify-center items-center overflow-x-hidden">
           <div className="h-screen">
 
-        <ParticlesComponent id="particles"/>
+        {/* <ParticlesComponent id="particles"/> */}
           </div>
           <div className="absolute inset-x-0 bottom-0 ">
             <div className="w-full h-24 rounded-t-full"></div>
@@ -138,38 +142,9 @@ const Home = () => {
         </div>
 
         <About />
-
-
-        {/* skills */}
-        <div
-          id="skills"
-          className="relative w-[100vw] h-[100vh] bg-[#F7F7F7] flex justify-center items-center mt-10"
-        >
-          <div
-            data-scroll-container
-            ref={scrollRef}
-            className="w-full h-full bg-white"
-          >
-            {/* Section Header */}
-            <div className="relative text-left ml-4  ">
-              <h1 className="text-7xl font-extrabold text-gray-900 uppercase">
-                Skills
-              </h1>
-              <div className="w-1/4 h-1 bg-gray-900 mt-4 text-left"></div>
-            </div>
-
-            {/* Scrollable Text Section */}
-            <div
-              className="relative mt-16  ml-4 text-left"
-              data-scroll
-              data-scroll-speed="1"
-            >
-              <p className="font-semibold italic  text-3xl">
-                CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
-              </p>
-            </div>
-          </div>
-        </div>
+        <Projects/>
+        <Experience/>
+        <Contact/>
       </div>
     </div>
   );
