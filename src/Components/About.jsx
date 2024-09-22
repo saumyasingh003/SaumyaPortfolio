@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import pic2 from "../Components/assets/pic2.png";
+import aiimage from "../Components/assets/aiimage.png";
 import { MdWavingHand } from "react-icons/md";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import LocomotiveScroll from "locomotive-scroll";
@@ -65,19 +65,19 @@ const About = () => {
           className="w-full bg-[#F7F7F7]"
         >
           <div className="relative ">
-            <h1 className="text-6xl font-extrabold  text-gray-900">ABOUT</h1>
+            <h1 className="md:text-6xl text-4xl font-extrabold  text-gray-900">ABOUT</h1>
             <div className="w-1/4 h-1 bg-gray-900 mt-4"></div>
           </div>
-          <div className="grid grid-cols-2 mt-4">
+          <div className="grid md:grid-cols-2  grid-cols-1 mt-4">
             <div
-              className="relative w-[350px] h-[350px] rounded-full overflow-hidden ml-40 mt-8"
+              className="relative md:w-[350px] md:h-[350px] w-64 h-64 mx-auto rounded-full overflow-hidden md:ml-40 mt-8"
               // data-scroll
               // data-scroll-speed="3"
               // data-scroll-direction="vertical"
               // data-scroll-delay="0.05"
             >
               <img
-                src={pic2}
+                src={aiimage}
                 alt="circle-img"
                 className="w-fit h-fit object-cover rounded-full"
               />

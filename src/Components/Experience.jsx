@@ -60,7 +60,7 @@ const Experience = () => {
       >
         <div className="w-full bg-[#F7F7F7]">
           <div className="relative ">
-            <h1 className="text-6xl font-extrabold  text-gray-900">
+            <h1 className="md:text-6xl text-4xl font-extrabold  text-gray-900">
               Experience
             </h1>
             <div className="w-1/4 h-1 bg-gray-900 mt-2"></div>
@@ -70,7 +70,7 @@ const Experience = () => {
         <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div class="bg-teal-800 h-40 relative flex justify-center items-center">
             <div class="absolute inset-0 bg-gradient-to-b from-gray-800 to-teal-600"></div>
-            <h5 class="text-white text-xl font-semibold z-10">
+            <h5 class="text-white text-xl font-semibold z-10 text-center">
               Indian Institute of Technology , Patna
             </h5>
             <img
@@ -102,7 +102,7 @@ const Experience = () => {
         <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div class="bg-orange-800 h-40 relative flex justify-center items-center">
             <div class="absolute inset-0 bg-gradient-to-b from-yellow-700 to-yellow-500"></div>
-            <h5 class="text-white text-xl font-semibold z-10">
+            <h5 class="text-white text-xl font-semibold z-10 text-center">
               SalesQueen Software Solutions , Chennai
             </h5>
             <img

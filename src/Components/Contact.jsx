@@ -7,24 +7,23 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="relative w-screen h-full bg-white flex flex-col justify-center items-center ml-20 mt-20"
+      className="relative w-screen h-full  flex flex-col justify-center items-center md:p-0 p-4  md:ml-20 mt-20"
     >
       <div className="w-full h-full bg-white">
-        <div className="flex justify-between items-start mb-6">
+        <div className="flex md:flex-row flex-col md:justify-between md:items-start mb-6">
           {/* Left content */}
-          <div className="w-1/2">
-            <h1 className="text-6xl font-extrabold text-gray-900 mb-4">
+          <div className="md:w-1/2 w-full">
+            <h1 className="md:text-6xl text-3xl font-extrabold text-gray-900 mb-4">
               Contact Me
             </h1>
             <p className="uppercase mt-4 text-2xl text-gray-400 mb-10">
-              Discuss a project or just want to say hi? My inbox is open for
-              all
+              Discuss a project or just want to say hi? My inbox is open for all
             </p>
             <a
               href="mailto:saumyasingh98982@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 text-5xl text-gray-600 hover:text-black block"
+              className="mt-4 md:text-5xl text-2xl text-gray-600 hover:text-black block"
             >
               saumyasingh98982@gmail.com
             </a>
@@ -56,17 +55,16 @@ const Contact = () => {
           </div>
 
           {/* Right video */}
-          <div className="w-1/2 flex justify-center -mt-20">
-  <video
-    src={Marketing}
-    alt="Contact video"
-    className="w-[400px] h-[400px] object-cover bg-black"
-    autoPlay
-    loop
-    muted
-  />
-</div>
-
+          <div className="hidden w-1/2 md:flex justify-center -mt-20">
+            <video
+              src={Marketing}
+              alt="Contact video"
+              className="md:w-[400px] w-72 h-72 md:h-[400px] object-cover bg-black"
+              autoPlay
+              loop
+              muted
+            />
+          </div>
         </div>
       </div>
     </div>

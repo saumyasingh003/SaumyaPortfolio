@@ -7,11 +7,11 @@ const Projects = () => {
     <div>
       <div
         id="projects"
-        className="relative w-screen h-full bg-white flex flex-col justify-center items-center ml-10 mt-10 "
+        className="relative md:w-screen h-full bg-white flex flex-col justify-center md:items-center p-4 md:ml-10 mt-10 "
       >
         <div className="w-full h-full bg-white">
           <div className="relative text-left  ">
-            <h1 className="text-6xl font-extrabold text-gray-900 ">
+            <h1 className="md:text-6xl text-4xl font-extrabold text-gray-900 ">
               Projects
             </h1>
             <div className="w-1/4 h-1 bg-gray-900 mt-4 text-left"></div>
@@ -26,8 +26,8 @@ const Projects = () => {
 
         {/* Project Cards Container */}
        <div className="">
-       <div className="flex flex-wrap justify-center items-stretch gap-20 mt-10 mb-10 ">
-          <div className="w-[400px] h-[450px] rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
+       <div className="flex md:flex-row flex-col justify-center md:gap-20 gap-10 mt-10 mb-10 m-auto">
+          <div className="md:w-[400px] w-96  md:h-[450px] rounded md:overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
             <img
               className="w-full h-[50%] object-cover"
               src={indiaTours}
@@ -35,7 +35,7 @@ const Projects = () => {
             />
             <div className="px-6 py-4 flex flex-col flex-grow">
               <a
-                href="https://india-tours.vercel.app"
+                href="https://india-tours.vercel.app" target="_blank"
                 className="font-bold text-xl mb-2 text-black"
               >
                 IndiaTours!
@@ -57,7 +57,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="w-[400px] h-[450px] rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
+          <div className="md:w-[400px] w-96 md:h-[450px] rounded md:overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
             <img
               className="w-full h-[50%] object-cover"
               src={airbnb}
@@ -65,7 +65,7 @@ const Projects = () => {
             />
             <div className="px-6 py-4 flex flex-col flex-grow">
               <a
-                href="https://airbnb-5e78.onrender.com/listings"
+                href="https://airbnb-5e78.onrender.com/listings" target="_blank"
                 className="font-bold text-xl mb-2 text-black"
               >
                 Airbnb Clone
@@ -87,14 +87,14 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="w-[400px] h-[450px] rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
+          <div className="md:w-[400px] w-96 md:h-[450px] rounded md:overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
             <img
               className="w-full h-[50%] object-cover"
               src={shopper}
               alt="Shopper"
             />
             <div className="px-6 py-4 flex flex-col flex-grow">
-              <a href="" className="font-bold text-xl mb-2 text-black">
+              <a href="https://shopper-frontend-beta.vercel.app/" target="_blank" className="font-bold text-xl mb-2 text-black">
                 Shopper
               </a>
               <p className="text-gray-700 text-base flex-grow">
