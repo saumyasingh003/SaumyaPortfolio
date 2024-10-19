@@ -4,53 +4,12 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import iit from "../Components/assets/iit.png";
 import salesqueen from "../Components/assets/salesqueen.png";
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaNodeJs,
-  FaReact,
-  FaGitAlt,
-  FaBootstrap,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiCplusplus,
-  SiMongodb,
-} from "react-icons/si";
+
 
 const Experience = () => {
-  const scrollRef = useRef(null);
-  const scroll = useRef(null);
+  
 
-  useEffect(() => {
-    if (scrollRef.current) {
-      scroll.current = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true,
-      });
 
-      return () => scroll.current.destroy();
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = scrollRef.current.querySelector("h1");
-      if (element) {
-        element.style.transform = "translateY(0px)";
-      }
-    };
-
-    // Add scroll event listener
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      // Clean up the event listener on component unmount
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div>
@@ -67,6 +26,66 @@ const Experience = () => {
           </div>
         </div>
 
+       
+
+        <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-pink-600 h-40 relative flex justify-center items-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-red-700 to-red-500"></div>
+            <h5 class="text-white text-xl font-semibold z-10 text-center">
+              Nexorand , Hyderabad
+            </h5>
+            <img
+              src={salesqueen}
+              alt="D.E. Shaw & Co."
+              class="absolute bottom-0 transform translate-y-1/2 rounded-full w-24 h-24 border-4 border-white object-contain "
+            />
+          </div>
+          <div class="p-6 text-center mt-6">
+            <h6 class="text-xl text-gray-500 mb-4">Sep 2024 - Oct 2024</h6>
+            <ul class="text-gray-600 space-y-2 text-left ml-5  text-xl">
+              <li>
+                ● Integrated APIs with the frontend, improving technical skills and ensuring seamless functionality
+              </li>
+              <li>
+                ● Developed user-friendly UIs, focusing on intuitive designs that enhanced user experience.
+              </li>
+              <li>
+                ● Collaborated closely with a talented team, contributing ideas and solutions to meet project goals.
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-orange-800 h-40 relative flex justify-center items-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-yellow-700 to-yellow-500"></div>
+            <h5 class="text-white text-xl font-semibold z-10 text-center">
+              SalesQueen Software Solutions , Chennai
+            </h5>
+            <img
+              src={salesqueen}
+              alt="D.E. Shaw & Co."
+              class="absolute bottom-0 transform translate-y-1/2 rounded-full w-24 h-24 border-4 border-white object-contain "
+            />
+          </div>
+          <div class="p-6 text-center mt-6">
+            <h6 class="text-xl text-gray-500 mb-4">May 2024 - Aug 2024</h6>
+            <ul class="text-gray-600 space-y-2 text-left ml-5  text-xl">
+              <li>
+                ● Developed and implemented various front-end pages, ensuring
+                responsive design and user-friendly interfaces.
+              </li>
+              <li>
+                ● Actively participated in team discussions, contributing ideas
+                and solutions to improve project outcomes.
+              </li>
+              <li>
+                ● Attended daily meetings, collaborating with team members to
+                align on project goals and deliverables.
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div class="bg-teal-800 h-40 relative flex justify-center items-center">
             <div class="absolute inset-0 bg-gradient-to-b from-gray-800 to-teal-600"></div>
@@ -94,37 +113,6 @@ const Experience = () => {
               <li>
                 ● Provided concise summaries of research findings during IT
                 research internship.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="w-full mt-16 mb-10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-          <div class="bg-orange-800 h-40 relative flex justify-center items-center">
-            <div class="absolute inset-0 bg-gradient-to-b from-yellow-700 to-yellow-500"></div>
-            <h5 class="text-white text-xl font-semibold z-10 text-center">
-              SalesQueen Software Solutions , Chennai
-            </h5>
-            <img
-              src={salesqueen}
-              alt="D.E. Shaw & Co."
-              class="absolute bottom-0 transform translate-y-1/2 rounded-full w-24 h-24 border-4 border-white object-contain "
-            />
-          </div>
-          <div class="p-6 text-center mt-6">
-            <h6 class="text-xl text-gray-500 mb-4">May 2024 - Aug 2024</h6>
-            <ul class="text-gray-600 space-y-2 text-left ml-5  text-xl">
-              <li>
-                ● Developed and implemented various front-end pages, ensuring
-                responsive design and user-friendly interfaces.
-              </li>
-              <li>
-                ● Actively participated in team discussions, contributing ideas
-                and solutions to improve project outcomes.
-              </li>
-              <li>
-                ● Attended daily meetings, collaborating with team members to
-                align on project goals and deliverables.
               </li>
             </ul>
           </div>
