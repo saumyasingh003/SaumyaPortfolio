@@ -1,7 +1,7 @@
 import React from "react";
 import airbnb from "../Components/assets/airbnb.png";
 import indiaTours from "../Components/assets/indiatours.png";
-import shopper from "../Components/assets/shopper.png";
+import medico from "../Components/assets/medico.png";
 const Projects = () => {
   return (
     <div>
@@ -86,7 +86,7 @@ const Projects = () => {
               </span>
             </div>
           </div>
-
+{/* 
           <div className="md:w-[400px] w-96 md:h-[450px] rounded md:overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
             <img
               className="w-full h-[50%] object-cover"
@@ -110,6 +110,33 @@ const Projects = () => {
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-900 hover:text-white transition duration-300">
                 #grocery
+              </span>
+            </div>
+          </div> */}
+
+          <div className="md:w-[400px] w-96 md:h-[450px] rounded md:overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl p-6 flex flex-col">
+            <img
+              className="w-full h-[50%] object-cover"
+              src={medico}
+              alt="Shopper"
+            />
+            <div className="px-6 py-4 flex flex-col flex-grow">
+              <a href="https://medico-sam.vercel.app/" target="_blank" className="font-bold text-xl mb-2 text-black">
+                Medico
+              </a>
+              <p className="text-gray-700 text-base flex-grow">
+              A website where users can book appointments, admins can manage doctor details (add, view, and delete), access all doctor-related information, and review user feedback.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-900 hover:text-white transition duration-300">
+                #hospital
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-900 hover:text-white transition duration-300">
+                #appointment
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-900 hover:text-white transition duration-300">
+                #doctors
               </span>
             </div>
           </div>

@@ -3,6 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import iit from "../Components/assets/iit.png";
 import salesqueen from "../Components/assets/salesqueen.png";
+import nexorand from "../Components/assets/ss.png";
 
 
 
@@ -35,9 +36,9 @@ const Experience = () => {
               Nexorand , Hyderabad
             </h5>
             <img
-              src={salesqueen}
-              alt="D.E. Shaw & Co."
-              class="absolute bottom-0 transform translate-y-1/2 rounded-full w-24 h-24 border-4 border-white object-contain "
+              src={nexorand }
+              alt="Nexorand"
+              class="absolute bottom-0 transform translate-y-1/2 rounded-full w-24 h-24 border-4 border-white object-contain bg-white "
             />
           </div>
           <div class="p-6 text-center mt-6">

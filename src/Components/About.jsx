@@ -5,6 +5,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import Timeline from "./Timeline/Timeline";
+
 import {
   FaHtml5,
   FaCss3Alt,
@@ -14,12 +15,18 @@ import {
   FaGitAlt,
   FaBootstrap,
 } from "react-icons/fa";
+
 import {
   SiTailwindcss,
   SiExpress,
   SiCplusplus,
   SiMongodb,
+  SiPandas,
+  SiNumpy,
+  SiPython,
 } from "react-icons/si";
+import Matplotlib from "../assets/Matplotlib.png";
+import mysql from "../assets/MySQL.svg";
 
 const About = () => {
   const scrollRef = useRef(null);
@@ -65,17 +72,13 @@ const About = () => {
           className="w-full bg-[#F7F7F7]"
         >
           <div className="relative ">
-            <h1 className="md:text-6xl text-4xl font-extrabold  text-gray-900">ABOUT</h1>
+            <h1 className="md:text-6xl text-4xl font-extrabold  text-gray-900">
+              ABOUT
+            </h1>
             <div className="w-1/4 h-1 bg-gray-900 mt-4"></div>
           </div>
           <div className="grid md:grid-cols-2  grid-cols-1 mt-4">
-            <div
-              className="relative md:w-[350px] md:h-[350px] w-64 h-64 mx-auto rounded-full overflow-hidden md:ml-40 mt-8"
-              // data-scroll
-              // data-scroll-speed="3"
-              // data-scroll-direction="vertical"
-              // data-scroll-delay="0.05"
-            >
+            <div className="relative md:w-[350px] md:h-[350px] w-64 h-64 mx-auto rounded-full overflow-hidden md:ml-40 mt-8">
               <img
                 src={aiimage}
                 alt="circle-img"
@@ -83,13 +86,7 @@ const About = () => {
               />
             </div>
 
-            <div
-            // className="mr-40 mt-8"
-            // data-scroll
-            // data-scroll-speed="3"
-            // data-scroll-direction="vertical"
-            // data-scroll-delay="0.05"
-            >
+            <div>
               <p className="inline-flex items-center text-sansita-bold text-left text-2xl  pt-20">
                 I'm Saumya <MdWavingHand className="ml-2 text-yellow-400" />
               </p>
@@ -235,6 +232,58 @@ const About = () => {
                 <p className="mt-2 text-sm">MongoDB</p>
                 <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   NoSQL database for modern apps
+                </div>
+              </div>
+              <div className="group relative flex flex-col items-center hover:text-gray-600">
+                <div className="absolute left-[-10px] top-0 bottom-0 h-full w-[2px] bg-transparent group-hover:bg-gray-500 transition-all duration-300"></div>
+                <SiPython className="text-6xl text-blue-400 group-hover:text-gray-500 transition-colors duration-300" />
+                <p className="mt-2 text-sm">Python</p>
+                <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Versatile programming language
+                </div>
+              </div>
+
+              <div className="group relative flex flex-col items-center hover:text-gray-600">
+                <div className="absolute left-[-10px] top-0 bottom-0 h-full w-[2px] bg-transparent group-hover:bg-gray-500 transition-all duration-300"></div>
+                <img
+                  src={mysql}
+                  alt="MySQL"
+                  className="h-[3rem] w-[3rem] text-blue-500 group-hover:text-gray-500 transition-all duration-300"
+                />
+                <p className="mt-2 text-sm">SQL</p>
+                <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Database querying language
+                </div>
+              </div>
+
+              <div className="group relative flex flex-col items-center hover:text-gray-600">
+                <div className="absolute left-[-10px] top-0 bottom-0 h-full w-[2px] bg-transparent group-hover:bg-gray-500 transition-all duration-300"></div>
+                <SiPandas className="text-6xl text-teal-500 group-hover:text-gray-500 transition-colors duration-300" />
+                <p className="mt-2 text-sm">Pandas</p>
+                <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Data manipulation library
+                </div>
+              </div>
+
+              <div className="group relative flex flex-col items-center hover:text-gray-600">
+                <div className="absolute left-[-10px] top-0 bottom-0 h-full w-[2px] bg-transparent group-hover:bg-gray-500 transition-all duration-300"></div>
+                <SiNumpy className="text-6xl text-yellow-500 group-hover:text-gray-500 transition-colors duration-300" />
+                <p className="mt-2 text-sm">NumPy</p>
+                <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Numerical computing library
+                </div>
+              </div>
+
+              <div className="group relative flex flex-col items-center hover:text-gray-600">
+                <div className="absolute left-[-10px] top-0 bottom-0 h-full w-[2px] bg-transparent group-hover:bg-gray-500 transition-all duration-300"></div>
+                <img
+                  src={Matplotlib}
+                  alt="Matplotlib"
+                  className="h-[3rem] w-[3rem] group-hover:opacity-75 transition-all duration-300"
+                />
+                <p className="mt-2 text-sm">Matplotlib</p>
+                <div className="absolute bottom-10 bg-gray-700 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Data visualization library
                 </div>
               </div>
             </div>
